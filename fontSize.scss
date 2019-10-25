@@ -1,0 +1,14 @@
+@for $num from 8 through 50 {
+    .f-s-#{$num}{
+        font-size:#{$num}px;
+    }
+    .l-h-#{$num}{
+        line-height:#{$num}px;
+    }
+}
+@each $num in 100,200,300,400,500,600{
+    .f-w-#{$num}{
+        font-weight:#{$num};
+    }
+
+}

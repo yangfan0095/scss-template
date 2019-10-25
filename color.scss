@@ -1,0 +1,9 @@
+@import './colorValue.scss';
+@each $label,$value in $color-list {
+    .col-#{$label} {
+        color: $value
+    };
+    .bg-#{$label} {
+        background:$value;
+    }
+}

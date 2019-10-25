@@ -1,0 +1,33 @@
+@for $num from 0 through 340 {
+    .m-t-#{$num}{
+        margin-top:#{$num}px;
+    }
+    .m-b-#{$num}{
+        margin-bottom:#{$num}px;
+    }
+    .m-l-#{$num}{
+        margin-left:#{$num}px;
+    }
+    .m-r-#{$num}{
+        margin-right:#{$num}px;
+    }
+    .m-#{$num}{
+        margin:#{$num}px;
+    }
+
+    .p-t-#{$num}{
+        padding-top:#{$num}px;
+    }
+    .p-b-#{$num}{
+        padding-bottom:#{$num}px;
+    }
+    .p-l-#{$num}{
+        padding-left:#{$num}px;
+    }
+    .p-r-#{$num}{
+        padding-right:#{$num}px;
+    }
+    .p-#{$num}{
+        padding:#{$num}px;
+    }
+}

@@ -1,0 +1,23 @@
+.relative{
+    position:relative;
+}
+.absolute{
+    position:absolute;
+}
+.fixed{
+    position:fixed;
+}
+@for $num from 0 through 50 {
+    .t-#{$num}{
+        top:#{$num}px;
+    }
+    .r-#{$num}{
+        right:#{$num}px;
+    }
+    .l-#{$num}{
+        left:#{$num}px;
+    }
+    .b-#{$num}{
+        bottom:#{$num}px;
+    }
+}
