@@ -1,4 +1,4 @@
-@for $num from 0 through 340 {
+@for $num from 0 through 30 {
     .m-t-#{$num}{
         margin-top:#{$num}px;
     }
