@@ -1,4 +1,7 @@
 //flex定位问题
+
+$minFlex : 0 !default;
+$maxFlex : 10 !default;
 .flex{
     display:flex;
 }
@@ -62,7 +65,7 @@
 .flex-start{
     justify-content: flex-start;
 }
-@for $num from 1 through 10 {
+@for $num from $minFlex through $maxFlex {
     .flex#{$num} {
         flex: #{$num};
     }

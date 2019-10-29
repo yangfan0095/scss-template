@@ -1,3 +1,7 @@
+$minPosition : 0 !default;
+$maxPosition : 50 !default;
+$positionList :60,70,80,90,100 !default;
+
 .relative{
     position:relative;
 }
@@ -7,7 +11,22 @@
 .fixed{
     position:fixed;
 }
-@for $num from 0 through 50 {
+@for $num from $minPosition through $maxPosition {
+    .t-#{$num}{
+        top:#{$num}px;
+    }
+    .r-#{$num}{
+        right:#{$num}px;
+    }
+    .l-#{$num}{
+        left:#{$num}px;
+    }
+    .b-#{$num}{
+        bottom:#{$num}px;
+    }
+}
+
+@each $num in $positionList{
     .t-#{$num}{
         top:#{$num}px;
     }
